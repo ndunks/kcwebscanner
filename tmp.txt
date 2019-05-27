@@ -1,0 +1,12 @@
+#:config replace ' ' with '-','_',''
+
+kapak212 backup
+kapak212 new
+kapak212 old
+kapak212 git
+kapak212 repo
+kapak212 update
+kapak212 db
+kapak212 app
+kapak212 ci
+

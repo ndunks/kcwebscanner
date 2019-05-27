@@ -1,0 +1,942 @@
+2015
+2016
+2017
+2018
+CHANGELOG.txt
+CHANGELOG
+303
+7upcasino
+about
+access
+account
+acl
+adm
+admin
+adminauth
+admin auth
+admin_auth
+admin-auth
+administrator
+adminlogin
+admin login
+admin_login
+admin-login
+adminmain
+admin main
+admin_main
+admin-main
+adminpanel
+admin panel
+admin_panel
+admin-panel
+admins
+adminweb
+admin web
+admin_web
+admin-web
+admmenu
+adm menu
+adm_menu
+adm-menu
+admuser
+adm user
+adm_user
+adm-user
+agen
+akses
+alexavegas
+api
+app
+_app
+_app303
+application
+_application
+appmain
+app main
+app_main
+app-main
+appmenu
+app menu
+app_menu
+app-menu
+apps
+archive
+archives
+asialive
+asset
+assets
+athen
+athentication
+autentikasi
+auth
+.auth
+authadmin
+auth admin
+auth_admin
+auth-admin
+authen
+authentication
+authuser
+auth user
+auth_user
+auth-user
+auto
+autoload
+backend
+backup
+_backup
+__backup
+.backup
+backup1
+backup 1
+backup_1
+backup-1
+backup2
+backup 2
+backup_2
+backup-2
+backupdata
+backup data
+backup_data
+backup-data
+backupdb
+backup db
+backup_db
+backup-db
+backupdbs
+backup dbs
+backup_dbs
+backup-dbs
+backuped
+backupold
+backup old
+backup_old
+backup-old
+backups
+backupsql
+backup sql
+backup_sql
+backup-sql
+backupweb
+backup web
+backup_web
+backup-web
+bak
+bckp
+bin
+block
+branches
+build
+bup
+cache
+.cache
+caches
+catalog
+catalogs
+cemedombet
+center
+central
+cfg
+cgi
+cgi-bin
+changelog.txt
+check
+checker
+class
+Class
+classes
+clone
+cloud
+cms
+coba
+cobadb
+coba db
+coba_db
+coba-db
+cobasql
+coba sql
+coba_sql
+coba-sql
+common
+composer
+conf
+config
+.config
+Config
+configlocal
+config local
+config_local
+config-local
+configs
+Configs
+configuration
+configweb
+config web
+config_web
+config-web
+config.yaml
+connection
+console
+content
+contents
+control
+controlcenter
+control center
+control_center
+control-center
+controller
+controllers
+controlpanel
+control panel
+control_panel
+control-panel
+controls
+cpanel
+create
+createaccount
+create account
+create_account
+create-account
+createuser
+create user
+create_user
+create-user
+css
+data
+_data
+.data
+data1
+data 1
+data_1
+data-1
+data2
+data 2
+data_2
+data-2
+data3
+data 3
+data_3
+data-3
+databackup
+data backup
+data_backup
+data-backup
+database
+db
+dbasia88
+dbbackup
+db backup
+db_backup
+db-backup
+dbbak
+db bak
+db_bak
+db-bak
+dbcoba
+db coba
+db_coba
+db-coba
+dbmanager
+db manager
+db_manager
+db-manager
+dbmr
+dbs
+dbtes
+db tes
+db_tes
+db-tes
+dbtest
+db test
+db_test
+db-test
+default
+default1
+defor
+deleted
+deposit
+description
+detail
+detailpage
+detail page
+detail_page
+detail-page
+dev
+developer
+development
+dewa-analytics
+dewabet
+dewacasino
+dewafortune
+dewainteractive
+dewajitu
+dewapoker
+dewavegas
+dewavip
+dir
+do
+doc
+docs
+download
+downloadfile
+download file
+download_file
+download-file
+downloadfiles
+download files
+download_files
+download-files
+downloads
+dpupdate
+dp update
+dp_update
+dp-update
+edit
+editor
+editorial
+editweb
+edit web
+edit_web
+edit-web
+email
+emails
+emailtest
+email test
+email_test
+email-test
+etc
+exp
+expired
+external
+feed
+feeds
+file
+_file
+.file
+filedownload
+file download
+file_download
+file-download
+filedownloads
+file downloads
+file_downloads
+file-downloads
+filemanager
+file manager
+file_manager
+file-manager
+files
+_files
+.files
+fileupdate
+file update
+file_update
+file-update
+fileupload
+file upload
+file_upload
+file-upload
+fileuploads
+file uploads
+file_uploads
+file-uploads
+firebase.json
+.firebaserc
+flash
+forgot
+forgotpass
+forgot pass
+forgot_pass
+forgot-pass
+forgotpassword
+forgot password
+forgot_password
+forgot-password
+formlogin
+form login
+form_login
+form-login
+foto
+function
+functions
+galeri
+galeriimg
+galeri img
+galeri_img
+galeri-img
+galery
+galeryimg
+galery img
+galery_img
+galery-img
+game
+game1
+game2
+games
+gateway
+generate
+generator
+get
+gets
+git
+.git
+.git/HEAD
+.gitignore
+guest
+HEAD
+help
+home1
+home2
+homepage
+home page
+home_page
+home-page
+hooks
+.htaccess
+html
+ico
+icon
+icons
+igamble
+images
+imageupload
+image upload
+image_upload
+image-upload
+imageuploads
+image uploads
+image_uploads
+image-uploads
+img
+imggaleri
+img galeri
+img_galeri
+img-galeri
+imggalery
+img galery
+img_galery
+img-galery
+imgs
+imgupload
+img upload
+img_upload
+img-upload
+index
+index1
+index2
+index.asp.0
+index.asp.1
+index.asp.bak
+index.asp.old
+indexbackup
+index backup
+index_backup
+index-backup
+indexold
+index old
+index_old
+index-old
+indexori
+index ori
+index_ori
+index-ori
+index.php.0
+index.php.1
+index.php.bak
+index.php.old
+indexx
+indexxx
+inf
+info
+internal
+ipanel
+jowopools
+js
+junk
+kcfinder
+kendali
+kirim
+koneksi
+kontrol
+lama
+lapak303
+lapak 303
+lapak_303
+lapak-303
+lemacau
+lemacau88
+lemacau 88
+lemacau_88
+lemacau-88
+lemacauv2
+lemacau v2
+lemacau_v2
+lemacau-v2
+lib
+libraries
+library
+libs
+log
+_log
+log_
+logger
+login
+log in
+log_in
+log-in
+loginadmin
+login admin
+login_admin
+login-admin
+logindefor
+login defor
+login_defor
+login-defor
+loginform
+login form
+login_form
+login-form
+logingame
+login game
+login_game
+login-game
+logingames
+login games
+login_games
+login-games
+loginpengguna
+login pengguna
+login_pengguna
+login-pengguna
+logintoto
+login toto
+login_toto
+login-toto
+loginuser
+login user
+login_user
+login-user
+logs
+_logs
+lupapass
+lupa pass
+lupa_pass
+lupa-pass
+lupapassword
+lupa password
+lupa_password
+lupa-password
+mail
+mailer
+mails
+mailsetup
+mail setup
+mail_setup
+mail-setup
+mailtest
+mail test
+mail_test
+mail-test
+main
+make
+Makefile
+manage
+manager
+masuk
+m.dewavip
+mejahoki
+mejahokiv2
+mejahoki v2
+mejahoki_v2
+mejahoki-v2
+menu
+menuadm
+menu adm
+menu_adm
+menu-adm
+menuapp
+menu app
+menu_app
+menu-app
+menuuser
+menu user
+menu_user
+menu-user
+menuusr
+menu usr
+menu_usr
+menu-usr
+mildcasino
+mime
+model
+models
+multiadmin
+multi admin
+multi_admin
+multi-admin
+myinfo
+name
+names
+new
+newaccount
+new account
+new_account
+new-account
+newuse
+new use
+new_use
+new-use
+node_modules
+.npm
+objects
+old
+oldbackup
+old backup
+old_backup
+old-backup
+opus_db
+opus_db_test
+ora
+oracle
+oratest
+ora test
+ora_test
+ora-test
+ori
+p4k3n45i
+package
+package-lock
+page
+page2
+paiza99
+panel
+paneladmin
+panel admin
+panel_admin
+panel-admin
+paneluser
+panel user
+panel_user
+panel-user
+panelweb
+panel web
+panel_web
+panel-web
+pdf
+pdfs
+photo
+photos
+phpadmin
+phpadminer
+phpinfo
+phpmimin
+phpmyadmin
+PhpMyAdmin
+plogin
+pma
+portal
+post
+postpage
+post page
+post_page
+post-page
+posts
+processed
+pusat
+qpanel
+queryform
+query form
+query_form
+query-form
+querytest
+query test
+query_test
+query-test
+quizcorner
+readme
+README
+readme.md
+README.MD
+readme.txt
+README.TXT
+refs
+reg
+regaccount
+reg account
+reg_account
+reg-account
+regiesteraccount
+regiester account
+regiester_account
+regiester-account
+regiesteruser
+regiester user
+regiester_user
+regiester-user
+regist
+register
+reguser
+reg user
+reg_user
+reg-user
+report
+reports
+request
+res
+resetpass
+reset pass
+reset_pass
+reset-pass
+resetpassword
+reset password
+reset_password
+reset-password
+resource
+resources
+restore
+robots.txt
+robot.txt
+rss
+runtime
+sass
+scss
+secret
+secrets
+serverstatus
+server status
+server_status
+server-status
+sess
+setting
+settings
+shen168
+shen168dev
+shen168 dev
+shen168_dev
+shen168-dev
+sitemap
+sql
+sqlbackup
+sql backup
+sql_backup
+sql-backup
+sqlo
+sqltest
+sql test
+sql_test
+sql-test
+src
+stat
+stats
+store
+superadmin
+super admin
+super_admin
+super-admin
+.svn
+swf
+sys
+sysadmin
+sys admin
+sys_admin
+sys-admin
+sysconfig
+sys config
+sys_config
+sys-config
+system
+systemconfig
+system config
+system_config
+system-config
+systems
+sysuser
+sys user
+sys_user
+sys-user
+.tar.gz
+temp
+template
+templates
+tesdb
+tes db
+tes_db
+tes-db
+tesemail
+tes email
+tes_email
+tes-email
+teskoneksi
+tes koneksi
+tes_koneksi
+tes-koneksi
+tesmail
+tes mail
+tes_mail
+tes-mail
+test
+testdb
+test db
+test_db
+test-db
+testemail
+test email
+test_email
+test-email
+tester
+testing
+testmail
+test mail
+test_mail
+test-mail
+testquery
+test query
+test_query
+test-query
+tests
+tinymce
+tiny mce
+tiny_mce
+tiny-mce
+tmp
+.tmp
+tnymce
+toto
+trash
+tsconfig
+tslint
+udpatefile
+udpate file
+udpate_file
+udpate-file
+unovegas
+unovegas7889
+unovegas 7889
+unovegas_7889
+unovegas-7889
+unovegasv2
+unovegas v2
+unovegas_v2
+unovegas-v2
+up
+update
+updated
+updatedb
+update db
+update_db
+update-db
+upld
+upload
+.upload
+uploaddoc
+upload doc
+upload_doc
+upload-doc
+uploaded
+uploadfile
+upload file
+upload_file
+upload-file
+uploadfiles
+upload files
+upload_files
+upload-files
+uploadimg
+upload img
+upload_img
+upload-img
+uploads
+user
+useradm
+user adm
+user_adm
+user-adm
+usermenu
+user menu
+user_menu
+user-menu
+userpanel
+user panel
+user_panel
+user-panel
+users
+usr
+utama
+v1
+V1
+v2
+V2
+v3
+V3
+vegas88
+vendor
+ver
+verifikasi
+version
+version.txt
+view
+views
+vip01
+vip02
+vip03
+.vscode
+web
+webadmin
+web admin
+web_admin
+web-admin
+webalizer
+webbackup
+web backup
+web_backup
+web-backup
+webconfig
+.webconfig
+web config
+web_config
+web-config
+WebConfig
+webedit
+web edit
+web_edit
+web-edit
+webeditor
+web editor
+web_editor
+web-editor
+weblama
+web lama
+web_lama
+web-lama
+webmanager
+web manager
+web_manager
+web-manager
+webnew
+web new
+web_new
+web-new
+webold
+web old
+web_old
+web-old
+webpanel
+web panel
+web_panel
+web-panel
+website
+webstat
+web stat
+web_stat
+web-stat
+webstats
+web stats
+web_stats
+web-stats
+worldcup
+wp-admin
+wp-config
+www.Dewalive
+www.dewatogel
+zip
+zpanel

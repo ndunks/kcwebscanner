@@ -1,0 +1,708 @@
+tpkdb
+ppkb
+uptk
+bict
+pelindo
+pelindo1
+dumai
+medan
+blc
+admin tpkdb
+admin-tpkdb
+admin_tpkdb
+admintpkdb
+admin ppkb
+admin-ppkb
+admin_ppkb
+adminppkb
+admin uptk
+admin-uptk
+admin_uptk
+adminuptk
+admin bict
+admin-bict
+admin_bict
+adminbict
+admin pelindo
+admin-pelindo
+admin_pelindo
+adminpelindo
+admin pelindo1
+admin-pelindo1
+admin_pelindo1
+adminpelindo1
+admin dumai
+admin-dumai
+admin_dumai
+admindumai
+admin medan
+admin-medan
+admin_medan
+adminmedan
+admin blc
+admin-blc
+admin_blc
+adminblc
+pegawai
+absen
+ptk
+PTK
+uptk bict
+uptk-bict
+uptk_bict
+uptkbict
+.webconfig
+.htaccess
+do
+post
+posts
+post page
+post-page
+post_page
+postpage
+home1
+home2
+home page
+home-page
+home_page
+homepage
+default
+default1
+main
+detail
+detail page
+detail-page
+detail_page
+detailpage
+archive
+archives
+utama
+page
+page2
+index
+indexx
+indexxx
+index old
+index-old
+index_old
+indexold
+index backup
+index-backup
+index_backup
+indexbackup
+index ori
+index-ori
+index_ori
+indexori
+index.php.old
+index.php.bak
+index.php.0
+index.php.1
+index.asp.old
+index.asp.bak
+index.asp.0
+index.asp.1
+ori
+index1
+content
+contents
+info
+help
+about
+index2
+catalog
+catalogs
+report
+reports
+feed
+feeds
+rss
+sitemap
+agen
+deposit
+mail test
+mail-test
+mail_test
+mailtest
+test mail
+test-mail
+test_mail
+testmail
+email test
+email-test
+email_test
+emailtest
+test email
+test-email
+test_email
+testemail
+sqlo
+plogin
+kirim
+data
+data 1
+data-1
+data_1
+data1
+data 2
+data-2
+data_2
+data2
+data 3
+data-3
+data_3
+data3
+file
+files
+_data
+_file
+_files
+.data
+.file
+.files
+dir
+store
+test
+development
+dev
+tests
+sess
+log
+logs
+_log
+_logs
+cache
+caches
+check
+checker
+coba
+names
+name
+email
+mail
+mail setup
+mail-setup
+mail_setup
+mailsetup
+emails
+mails
+mailer
+stat
+stats
+web stat
+web-stat
+web_stat
+webstat
+web stats
+web-stats
+web_stats
+webstats
+Class
+class
+tiny_mce
+block
+query form
+query-form
+query_form
+queryform
+query test
+query-test
+query_test
+querytest
+test query
+test-query
+test_query
+testquery
+coba db
+coba-db
+coba_db
+cobadb
+db coba
+db-coba
+db_coba
+dbcoba
+inf
+phpinfo
+trash
+junk
+deleted
+exp
+expired
+backup
+backups
+backup old
+backup-old
+backup_old
+backupold
+old backup
+old-backup
+old_backup
+oldbackup
+bak
+db
+db bak
+db-bak
+db_bak
+dbbak
+.backup
+_backup
+__backup
+backup 1
+backup-1
+backup_1
+backup1
+backup 2
+backup-2
+backup_2
+backup2
+backuped
+restore
+clone
+backup data
+backup-data
+backup_data
+backupdata
+data backup
+data-backup
+data_backup
+databackup
+db backup
+db-backup
+db_backup
+dbbackup
+dbs
+sql
+ora
+oracle
+ora test
+ora-test
+ora_test
+oratest
+sql test
+sql-test
+sql_test
+sqltest
+sql backup
+sql-backup
+sql_backup
+sqlbackup
+backup db
+backup-db
+backup_db
+backupdb
+backup dbs
+backup-dbs
+backup_dbs
+backupdbs
+backup sql
+backup-sql
+backup_sql
+backupsql
+bup
+bckp
+2015
+2016
+2017
+2018
+v1
+v2
+v3
+old
+new
+web
+lama
+web lama
+web-lama
+web_lama
+weblama
+web old
+web-old
+web_old
+webold
+web new
+web-new
+web_new
+webnew
+backup web
+backup-web
+backup_web
+backupweb
+web backup
+web-backup
+web_backup
+webbackup
+update
+updated
+udpate file
+udpate-file
+udpate_file
+udpatefile
+file update
+file-update
+file_update
+fileupdate
+dp update
+dp-update
+dp_update
+dpupdate
+update db
+update-db
+update_db
+updatedb
+guest
+phpmyadmin
+PhpMyAdmin
+pma
+phpadmin
+phpadminer
+phpmimin
+dbmr
+webalizer
+server status
+server-status
+server_status
+serverstatus
+cgi
+cgi-bin
+bin
+build
+.git
+.svn
+.cache
+file manager
+file-manager
+file_manager
+filemanager
+db manager
+db-manager
+db_manager
+dbmanager
+web config
+web-config
+web_config
+webconfig
+conf
+config
+configs
+configuration
+Config
+Configs
+setting
+settings
+config web
+config-web
+config_web
+configweb
+WebConfig
+sys config
+sys-config
+sys_config
+sysconfig
+system config
+system-config
+system_config
+systemconfig
+app
+.app
+apps
+application
+.application
+view
+views
+controller
+controllers
+library
+libraries
+model
+models
+wp-config
+adm user
+adm-user
+adm_user
+admuser
+user adm
+user-adm
+user_adm
+useradm
+admin
+admins
+admin web
+admin-web
+admin_web
+adminweb
+web admin
+web-admin
+web_admin
+webadmin
+web edit
+web-edit
+web_edit
+webedit
+edit web
+edit-web
+edit_web
+editweb
+web editor
+web-editor
+web_editor
+webeditor
+web manager
+web-manager
+web_manager
+webmanager
+website
+administrator
+akses
+access
+adm
+usr
+user
+users
+login
+masuk
+auth
+authentication
+log in
+log-in
+log_in
+login
+sys
+sys admin
+sys-admin
+sys_admin
+sysadmin
+sys user
+sys-user
+sys_user
+sysuser
+system
+systems
+auth user
+auth-user
+auth_user
+authuser
+auth admin
+auth-admin
+auth_admin
+authadmin
+login user
+login-user
+login_user
+loginuser
+login admin
+login-admin
+login_admin
+loginadmin
+admin login
+admin-login
+admin_login
+adminlogin
+admin auth
+admin-auth
+admin_auth
+adminauth
+backend
+acl
+cms
+wp-admin
+kendali
+kontrol
+control
+portal
+control center
+control-center
+control_center
+controlcenter
+control panel
+control-panel
+control_panel
+controlpanel
+controls
+panel
+cpanel
+ipanel
+qpanel
+zpanel
+web panel
+web-panel
+web_panel
+webpanel
+panel web
+panel-web
+panel_web
+panelweb
+admin panel
+admin-panel
+admin_panel
+adminpanel
+panel admin
+panel-admin
+panel_admin
+paneladmin
+panel user
+panel-user
+panel_user
+paneluser
+user panel
+user-panel
+user_panel
+userpanel
+menu
+menu app
+menu-app
+menu_app
+menuapp
+menu adm
+menu-adm
+menu_adm
+menuadm
+menu usr
+menu-usr
+menu_usr
+menuusr
+menu user
+menu-user
+menu_user
+menuuser
+user menu
+user-menu
+user_menu
+usermenu
+adm menu
+adm-menu
+adm_menu
+admmenu
+app menu
+app-menu
+app_menu
+appmenu
+app main
+app-main
+app_main
+appmain
+admin main
+admin-main
+admin_main
+adminmain
+pusat
+center
+central
+manage
+manager
+edit
+editor
+editorial
+developer
+secret
+secrets
+js
+css
+scss
+sass
+.npm
+node_modules
+composer
+tmp
+temp
+upload
+uploads
+upld
+upload file
+upload-file
+upload_file
+uploadfile
+upload files
+upload-files
+upload_files
+uploadfiles
+file upload
+file-upload
+file_upload
+fileupload
+file uploads
+file-uploads
+file_uploads
+fileuploads
+uploaded
+doc
+upload doc
+upload-doc
+upload_doc
+uploaddoc
+docs
+pdf
+pdfs
+img
+img galery
+img-galery
+img_galery
+imggalery
+img galeri
+img-galeri
+img_galeri
+imggaleri
+galeri
+galery
+galery img
+galery-img
+galery_img
+galeryimg
+galeri img
+galeri-img
+galeri_img
+galeriimg
+tnymce
+tiny mce
+tiny-mce
+tiny_mce
+tinymce
+kcfinder
+template
+templates
+imgs
+images
+img upload
+img-upload
+img_upload
+imgupload
+image upload
+image-upload
+image_upload
+imageupload
+image uploads
+image-uploads
+image_uploads
+imageuploads
+upload img
+upload-img
+upload_img
+uploadimg
+foto
+photo
+photos
+ico
+icon
+icons
+res
+resource
+resources
+asset
+assets
+download
+downloads
+file download
+file-download
+file_download
+filedownload
+file downloads
+file-downloads
+file_downloads
+filedownloads
+download file
+download-file
+download_file
+downloadfile
+download files
+download-files
+download_files
+downloadfiles

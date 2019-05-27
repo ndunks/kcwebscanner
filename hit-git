@@ -1,0 +1,98 @@
+#!/usr/bin/env php
+<?php
+
+$file		= 'domains.txt';
+
+if(!is_file($file))
+{
+	die("File not exists");
+}
+
+$linew = 40;
+echo str_repeat("-", $linew) .  "\n";
+
+$curl_opt	= [
+	CURLOPT_AUTOREFERER 	=> false,
+	CURLOPT_SSL_VERIFYPEER => false,
+	CURLOPT_SSL_VERIFYHOST => false,
+	CURLOPT_FOLLOWLOCATION => false,
+	CURLOPT_RETURNTRANSFER => true,
+	CURLOPT_MAXREDIRS=> 3,
+	CURLOPT_CONNECTTIMEOUT=> 3,
+	CURLOPT_ENCODING => 'gzip',
+	//CURLOPT_NOBODY => true,
+	CURLOPT_TIMEOUT => 4
+];
+
+$words	= fopen($file, 'r');
+$no = 1;
+
+
+//$circle = ['-','\\','|','/'];
+while (($domain = fgets($words)) !== false)
+{
+	$domain	= trim($domain);
+	if(strlen($domain) == 0)
+		continue;
+	$response	= doCurl( $domain );
+
+	if($response === true )
+	{
+		echo str_pad("$domain/.git", $linew) . "[FOUND]\n";
+	}else{
+		fwrite(STDERR, str_pad($domain, $linew) . "[X] $response\n");
+	}
+	$no++;
+}
+
+fclose($words);
+echo "\n";
+
+function doCurl( $host, $path = '/.git/HEAD', $scheme = 'http', $retry = false )
+{
+	global $curl_opt;
+	
+	$ch	= curl_init("$scheme://$host$path");
+	curl_setopt_array($ch, $curl_opt);
+	$content = curl_exec($ch);
+	$http_code	= curl_getinfo($ch, CURLINFO_HTTP_CODE);
+	$redirect 	= trim( curl_getinfo($ch, CURLINFO_REDIRECT_URL) );
+	$type		= curl_getinfo($ch, CURLINFO_CONTENT_TYPE);
+	curl_close($ch);
+	if( $http_code == 200 )
+	{
+		$len	= strlen($content);
+		if( $len > 100 )
+		{
+			$content	= trim( substr($content, 0, 100) );
+		}
+		if( strpos($content, 'ref:') !== false )
+		{
+			return true;
+		}else{
+			return "$http_code len: $len";
+		}
+
+	}elseif($http_code >= 300 && $http_code < 400){
+		if(empty($redirect))
+		{
+			return "$http_code Empty redirect";
+		}else{
+			$urls	= parse_url($redirect);
+			//Check if redirect to https
+
+			if( @$urls['path'] == $path )
+			{
+				if( $retry )
+				{
+					return $http_code;
+				}
+				return doCurl( @$urls['host'] ?: $host, $path, 'https',true );
+			}else{
+				return "$http_code $redirect";
+			}
+		}
+	}
+
+	return $http_code;
+}

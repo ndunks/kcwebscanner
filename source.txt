@@ -1,0 +1,560 @@
+#:config replace ' ' with '-','_',''
+
+#IDNPlay
+lemacau
+lemacau v2
+mejahoki v2
+opus_db
+opus_db_test
+shen168
+shen168 dev
+unovegas
+unovegas 7889
+unovegas v2
+_app303
+toto
+defor
+log_
+login defor
+login toto
+login game
+games
+login games
+api
+app
+303
+lapak 303
+lemacau 88
+swf
+flash
+game
+games
+mejahoki
+asialive
+igamble
+alexavegas
+dewavegas
+paiza99
+mildcasino
+dewacasino
+vegas88
+lemacau
+www.dewatogel
+www.Dewalive
+dewavip
+m.dewavip
+dewabet
+dewapoker
+dewajitu
+dewafortune
+worldcup
+quizcorner
+dewafortune
+jowopools
+7upcasino
+cemedombet
+dewainteractive
+game1
+game2
+vip01
+vip02
+vip03
+p4k3n45i
+dbasia88
+dewa-analytics
+console
+cloud
+mime
+
+
+# common file/dir
+.webconfig
+.htaccess
+do
+post
+posts
+post page
+home1
+home2
+home page
+default
+default1
+main
+detail
+detail page
+archive
+archives
+utama
+page
+page2
+index
+indexx
+indexxx
+index old
+index backup
+index ori
+index.php.old
+index.php.bak
+index.php.0
+index.php.1
+index.asp.old
+index.asp.bak
+index.asp.0
+index.asp.1
+ori
+index1
+index2
+html
+zip
+.tar.gz
+content
+contents
+myinfo
+info
+help
+about
+index2
+catalog
+catalogs
+report
+reports
+feed
+feeds
+rss
+sitemap
+agen
+deposit
+mail test
+test mail
+email test
+test email
+sqlo
+plogin
+get
+gets
+request
+function
+functions
+class
+classes
+node_modules
+etc
+src
+package
+package-lock
+tsconfig
+tslint
+.config
+cfg
+auto
+autoload
+common
+config local
+
+
+# Sensitif dir/file
+koneksi
+tes koneksi
+tes email
+tes mail
+mail test
+email test
+coba sql
+sql test
+db test
+test db
+tes db
+db tes
+connection
+
+external
+internal
+database
+kirim
+data
+data 1
+data 2
+data 3
+file
+files
+_data
+_file
+_files
+.data
+.file
+.files
+dir
+store
+test
+development
+dev
+tests
+testing
+tester
+runtime
+generate
+generator
+logs
+objects
+refs
+HEAD
+index
+description
+branches
+hooks
+logger
+Makefile
+make
+build
+config.yaml
+git
+.auth
+.gitignore
+.firebaserc
+firebase.json
+.vscode
+sess
+log
+logs
+_log
+_logs
+cache
+caches
+check
+checker
+coba
+names
+name
+email
+mail
+mail setup
+emails
+mails
+mailer
+stat
+stats
+web stat
+web stats
+Class
+class
+tiny_mce
+block
+query form
+query test
+test query
+coba db
+db coba
+inf
+phpinfo
+
+# Backup file / dir
+trash
+junk
+deleted
+exp
+expired
+backup
+backups
+backup old
+old backup
+bak
+db
+db bak
+.backup
+_backup
+__backup
+backup 1
+backup 2
+backuped
+restore
+clone
+backup data
+data backup
+db backup
+dbs
+sql
+ora
+oracle
+ora test
+sql test
+sql backup
+backup db
+backup dbs
+backup sql
+bup
+bckp
+2015
+2016
+2017
+2018
+v1
+v2
+v3
+V1
+V2
+V3
+old
+new
+web
+lama
+web lama
+web old
+web new
+backup web
+web backup
+update
+updated
+udpate file
+file update
+dp update
+update db
+
+# Sensitif Dir
+CHANGELOG.txt
+CHANGELOG
+changelog.txt
+changelog
+robot.txt
+robots.txt
+readme
+readme.txt
+readme.md
+README
+README.TXT
+README.MD
+version.txt
+version
+changelog.txt
+guest
+phpmyadmin
+PhpMyAdmin
+pma
+phpadmin
+phpadminer
+phpmimin
+dbmr
+webalizer
+server status
+cgi
+cgi-bin
+bin
+build
+.git
+.git/HEAD
+.svn
+.cache
+git
+file manager
+db manager
+web config
+conf
+config
+configs
+configuration
+Config
+Configs
+setting
+settings
+config web
+WebConfig
+sys config
+system config
+app
+_app
+apps
+application
+_application
+view
+views
+controller
+controllers
+library
+libraries
+model
+models
+wp-config
+
+# Admin & Login dir
+auth
+athen
+athentication
+autentikasi
+login form
+form login
+adm user
+user adm
+multi admin
+super admin
+admin
+admins
+admin web
+web admin
+web edit
+edit web
+web editor
+web manager
+website
+administrator
+akses
+access
+adm
+usr
+user
+users
+login
+masuk
+auth
+authentication
+log in
+login
+login user
+login pengguna
+forgot
+forgot pass
+forgot password
+reset password
+reset pass
+lupa pass
+lupa password
+masuk
+authen
+authentication
+autentikasi
+verifikasi
+ver
+reg
+regist
+register
+regiester user
+regiester account
+reg user
+reg account
+create user
+create
+new use
+new account
+account
+create account
+gateway
+sys
+sys admin
+sys user
+system
+systems
+auth user
+auth admin
+login user
+login admin
+admin login
+admin auth
+backend
+acl
+cms
+wp-admin
+kendali
+kontrol
+control
+portal
+control center
+control panel
+controls
+panel
+cpanel
+ipanel
+qpanel
+zpanel
+web panel
+panel web
+admin panel
+panel admin
+panel user
+user panel
+menu
+menu app
+menu adm
+menu usr
+menu user
+user menu
+adm menu
+app menu
+app main
+admin main
+pusat
+center
+central
+manage
+manager
+edit
+editor
+editorial
+developer
+secret
+secrets
+
+# static files
+js
+css
+scss
+sass
+.npm
+node_modules
+composer
+vendor
+lib
+libs
+
+# Resource & Upload directory
+tmp
+temp
+upload
+uploads
+upld
+up
+.tmp
+.upload
+processed
+upload file
+upload files
+file upload
+file uploads
+uploaded
+doc
+upload doc
+docs
+pdf
+pdfs
+img
+img galery
+img galeri
+galeri
+galery
+galery img
+galeri img
+tnymce
+tiny mce
+kcfinder
+template
+templates
+imgs
+images
+img upload
+image upload
+image uploads
+upload img
+foto
+photo
+photos
+ico
+icon
+icons
+res
+resource
+resources
+asset
+assets
+download
+downloads
+file download
+file downloads
+download file
+download files

@@ -1,0 +1,73 @@
+#!/usr/bin/env php
+<?php
+if( $argc < 2)
+{
+	die("usage {$argv[0]} [url] [file-extension] [IGNORE HTTP RESPONSE CODE][..]\n");
+}
+$url		= rtrim($argv[1],'/');
+$url_parsed	= parse_url($url);
+$ext		= $argc >= 3 ? $argv[2] : '';
+$ignore_code = [404 ];
+if( $argc >= 4 )
+{
+	$ignore_code	= array_merge($ignore_code, array_splice($argv, 3) );
+}
+
+$file		= $_SERVER['WORDS'] ?: 'words.txt';
+
+if(!is_file($file))
+{
+	die("File not exists");
+}
+
+$linew = 80;
+echo "TARGET: $url\n";
+echo "WORDS : $file\n";
+echo "IGNORE: " . implode(' ', $ignore_code) . "\n";
+echo str_repeat("-", $linew) .  "\n";
+
+$curl_opt	= [
+	CURLOPT_AUTOREFERER => false,
+	CURLOPT_SSL_VERIFYPEER => false,
+	CURLOPT_SSL_VERIFYHOST => false,
+	CURLOPT_FOLLOWLOCATION => false,
+	CURLOPT_RETURNTRANSFER => true,
+	CURLOPT_NOBODY => true,
+	/*CURLOPT_COOKIE => 'laravel_session=eyJpdiI6IjNVVnJtOFczMk15T2Z1OXhBT2hOUkE9PSIsInZhbHVlIjoiSThIYlhmWUprczlIVThEXC85NlUyUE1CRHNOTDVlcGkycUFnYTV2VnJ4NmJWZE1pM1RtTEthbkloWXN3c1hmSlVyVnVyRnNtNEFcL3RuY01lV0lFOU5ydz09IiwibWFjIjoiOWJlNzg2NDI3MGI5MzhmYTY1ZmM3OTA0NTEzMzBmMzRkZThmMWRjNzM2ZmM4Y2E4NDE0OGFiNzFmZDMzMjhiNiJ9'*/
+	// CURLOPT_NOPROGRESS => false,
+	//CURLOPT_CUSTOMREQUEST	=> 'HEAD'
+];
+if( isset( $_SERVER['COOKIE'] ) ){
+  $curl_opt[CURLOPT_COOKIE] = $_SERVER['COOKIE'];
+}
+$words	= fopen($file, 'r');
+$no = 1;
+
+$ch	= curl_init();
+//$circle = ['-','\\','|','/'];
+while (($str = fgets($words)) !== false)
+{
+	$str	= trim($str);
+	if(strlen($str) == 0)
+		continue;
+	$str = str_replace(' ', '%20', $str);
+	$full_url	= $url . '/' . $str  . $ext;
+
+	$curl_opt[CURLOPT_URL]	= $full_url;
+	curl_setopt_array($ch, $curl_opt);
+	echo str_pad($no, 6) . ": $full_url ";
+	$resp = curl_exec($ch);
+	$http_code	= curl_getinfo($ch, CURLINFO_HTTP_CODE);
+	echo $http_code;
+	$no++;
+	if( in_array($http_code,$ignore_code) )
+	{
+		echo "\r" . str_repeat(' ', $linew) . "\r";
+	}else{
+		echo "\n";
+	}
+
+}
+curl_close($ch);
+fclose($words);
+echo "\n";
