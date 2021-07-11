@@ -124,15 +124,15 @@ while (  ( $str = fgets( $words ) ) !== false ) {
     do_test( $str, $no );
 }
 
-curl_close( $ch );
 fclose( $words );
 
 // Auto heuristic keyboard
 foreach ( $autowords as $basestr ) {
-    $str_list = [$basestr] + probe_words( $basestr );
+	$str_list = [$basestr] + probe_words( $basestr );
     foreach ( $str_list as $str ) {
-        do_test( $str, $no );
+		do_test( $str, $no );
     }
 }
+curl_close( $ch );
 
 echo "\n";
