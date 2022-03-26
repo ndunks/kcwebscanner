@@ -11,13 +11,13 @@ $linew = 80;
 if ( $argc >= 4 ) {
     $ignore_code = array_merge( $ignore_code, array_splice( $argv, 3 ) );
 }
-
+$content_type = null;
 function do_test( $str, &$no )
 {
-    global $url, $ext, $curl_opt, $ignore_code, $ch, $linew;
+    global $url, $ext, $curl_opt, $ignore_code, $ch, $linew, $content_type;
 
     $str = trim( $str );
-    if ( strlen( $str ) == 0 ) {
+    if ( $no != 0 && strlen( $str ) == 0 ) {
         return;
     }
 
@@ -28,7 +28,22 @@ function do_test( $str, &$no )
     curl_setopt_array( $ch, $curl_opt );
     echo str_pad( $no, 6 ) . ": $full_url ";
     $resp = curl_exec( $ch );
-    $http_code = curl_getinfo( $ch, CURLINFO_HTTP_CODE );
+    $info =  curl_getinfo( $ch );
+    if($info['redirect_url']){
+        echo "\rWARN: redirect to " . $info['redirect_url'] . "\n";
+    }
+    $http_code = $info['http_code'];
+    if( $no == 0){
+        $content_type = $info['content_type'];
+        if( !in_array($http_code, $ignore_code)){
+            echo "\rAdded to ignore code: $http_code      \n";
+            $ignore_code[] = $http_code;
+        }
+    }else if ($content_type){
+        if( $content_type != $info['content_type'] ){
+            echo " Type: " . $info['content_type'] . "\n";
+        }
+    }
     echo $http_code;
     $no++;
     if ( in_array( $http_code, $ignore_code ) ) {
@@ -116,9 +131,19 @@ $curl_opt = [
 if ( isset( $_SERVER['COOKIE'] ) ) {
     $curl_opt[CURLOPT_COOKIE] = $_SERVER['COOKIE'];
 }
-$no = 1;
+if ( isset( $_SERVER['BODY'] ) ) {
+    echo "With body\n";
+    $curl_opt[CURLOPT_NOBODY] = false;
+}
+if ( isset( $_SERVER['CURL_HOST'] ) ) {
+    echo "With host: " . $_SERVER['CURL_HOST'] . "\n";
+    $curl_opt[CURLOPT_HTTPHEADER] = ["Host: " . $_SERVER['CURL_HOST']];
+}
 $ch = curl_init();
-
+# heuristic by content size
+$no = 0;
+do_test( '', $no );
+$no = 1;
 $words = fopen( $file, 'r' );
 while (  ( $str = fgets( $words ) ) !== false ) {
     do_test( $str, $no );
