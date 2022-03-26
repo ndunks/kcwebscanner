@@ -30,8 +30,8 @@ function do_test( $str, &$no )
     $resp = curl_exec( $ch );
     $info =  curl_getinfo( $ch );
     if($info['redirect_url']){
-        echo "\rWARN: redirect to " . $info['redirect_url'] . ' ';
-        $newline = true;
+        echo "Redirect: " . $info['redirect_url'] . ' ';
+        $newline = $no == 0;
     }
     $http_code = $info['http_code'];
     if( $no == 0){
@@ -100,7 +100,7 @@ $file = @$_SERVER['WORDS'] ?: 'words.txt';
 if ( !is_file( $file ) ) {
     die( "File not exists" );
 }
-$hostname = parse_url( strtolower( $url ), PHP_URL_HOST );
+$hostname =  @$_SERVER['CURL_HOST'] ?: parse_url( strtolower( $url ), PHP_URL_HOST );
 // Remove domain extension
 $hostname_no_extension = preg_replace( '/(\.[^.]{2,3})?(\.[^.]{2,10})$/', '', $hostname );
 $hostname_parts = explode( '.', $hostname_no_extension );
