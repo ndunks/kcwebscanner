@@ -1,19 +1,73 @@
 #:config replace ' ' with '-','_',''
 
-# common file/dir
-dash
-dashboard
-backend
-frontend
-backoffice
-module
+#IDNPlay
+lemacau
+lemacau v2
+mejahoki v2
+opus_db
+opus_db_test
+shen168
+shen168 dev
+unovegas
+unovegas 7889
+unovegas v2
+_app303
+toto
+defor
 log_
+login defor
+login toto
+login game
+games
+login games
 api
 app
-404
+303
+lapak 303
+lemacau 88
+swf
+flash
+game
+games
+mejahoki
+asialive
+igamble
+alexavegas
+dewavegas
+paiza99
+mildcasino
+dewacasino
+vegas88
+lemacau
+www.dewatogel
+www.Dewalive
+dewavip
+m.dewavip
+dewabet
+dewapoker
+dewajitu
+dewafortune
+worldcup
+quizcorner
+dewafortune
+jowopools
+7upcasino
+cemedombet
+dewainteractive
+game1
+game2
+vip01
+vip02
+vip03
+p4k3n45i
+dbasia88
+dewa-analytics
 console
 cloud
 mime
+
+
+# common file/dir
 .webconfig
 .htaccess
 do
@@ -112,36 +166,7 @@ test db
 tes db
 db tes
 connection
-package
-package.json
-env
-.env.production
-.env.development
-nuxt.config.js
-vite.config.js
-vite.config.ts
-vue.config.js
-vue.config.ts
-manifest.json
-manifest.webmanifest
-manifests.json
-manifests.webmanifest
-web.webmanifest
-web.json
-.github
-.gitlab-ci.yml
-Dockerfile
-dockerfile
-docker-compose.yml
-webpack
-webpack.config.js
-vetur.config.js
-jsconfig.json
-.gitignore
-.dockerignore
-.prettierrc
-.eslintrc.js
-.eslintrc
+
 external
 internal
 database
@@ -284,7 +309,7 @@ file update
 dp update
 update db
 
-# Sensitif File & Dir
+# Sensitif Dir
 CHANGELOG.txt
 CHANGELOG
 changelog.txt
