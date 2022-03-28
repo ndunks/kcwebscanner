@@ -147,6 +147,14 @@ if ( isset( $_SERVER['CURL_HOST'] ) ) {
     echo "With host: " . $_SERVER['CURL_HOST'] . "\n";
     $curl_opt[CURLOPT_HTTPHEADER] = ["Host: " . $_SERVER['CURL_HOST']];
 }
+if ( isset( $_SERVER['HEADER'] ) ) {
+    echo "With header: " . $_SERVER['HEADER'] . "\n";
+    if(!$curl_opt[CURLOPT_HTTPHEADER]){
+        $curl_opt[CURLOPT_HTTPHEADER] = [];
+    }
+    $curl_opt[CURLOPT_HTTPHEADER][] = $_SERVER['HEADER'];
+}
+
 $ch = curl_init();
 # heuristic by content size
 $no = 0;
