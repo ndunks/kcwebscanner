@@ -11,6 +11,11 @@ $linew = 80;
 if ( $argc >= 4 ) {
     $ignore_code = array_merge( $ignore_code, array_splice( $argv, 3 ) );
 }
+
+function randomIp(){
+    return rand(0,255) . '.' . rand(0,255) . '.' . rand(0,255) . '.' . rand(0,255);
+}
+
 $content_type = null;
 function do_test( $str, &$no )
 {
@@ -23,6 +28,9 @@ function do_test( $str, &$no )
 
     $str = str_replace( ' ', '%20', $str );
     $full_url = $url . '/' . $str . $ext;
+    if( isset($_SERVER['RANDOM_IP'])  ){
+        $curl_opt[CURLOPT_HTTPHEADER][ count($curl_opt[CURLOPT_HTTPHEADER]) -1 ] = $_SERVER['RANDOM_IP'] . ": " . randomIp();
+    }
 
     $curl_opt[CURLOPT_URL] = $full_url;
     curl_setopt_array( $ch, $curl_opt );
@@ -149,10 +157,17 @@ if ( isset( $_SERVER['CURL_HOST'] ) ) {
 }
 if ( isset( $_SERVER['HEADER'] ) ) {
     echo "With header: " . $_SERVER['HEADER'] . "\n";
-    if(!$curl_opt[CURLOPT_HTTPHEADER]){
+    if(@!$curl_opt[CURLOPT_HTTPHEADER]){
         $curl_opt[CURLOPT_HTTPHEADER] = [];
     }
     $curl_opt[CURLOPT_HTTPHEADER][] = $_SERVER['HEADER'];
+}
+if( isset($_SERVER['RANDOM_IP'])  ){
+    echo "With Proxy random IP: " . $_SERVER['RANDOM_IP'] . "\n";
+    if(@!$curl_opt[CURLOPT_HTTPHEADER]){
+        $curl_opt[CURLOPT_HTTPHEADER] = [];
+    }
+    $curl_opt[CURLOPT_HTTPHEADER][] = $_SERVER['RANDOM_IP'] . ": 0.0.0.0";
 }
 
 $ch = curl_init();
