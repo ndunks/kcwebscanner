@@ -17,9 +17,10 @@ function randomIp(){
 }
 
 $content_type = null;
+$last_http_code = 0;
 function do_test( $str, &$no )
 {
-    global $url, $ext, $curl_opt, $ignore_code, $ch, $linew, $content_type;
+    global $url, $ext, $curl_opt, $ignore_code, $ch, $linew, $content_type, $last_http_code;
     $newline = false;
     $str = trim( $str );
     if ( $no != 0 && strlen( $str ) == 0 ) {
@@ -42,22 +43,24 @@ function do_test( $str, &$no )
         $newline = $no == 0;
     }
     $http_code = $info['http_code'];
-    if( $no == 0){
+    if( $no == 1){
+        // if first two path has same http_code, auto add it to ignore
         $content_type = $info['content_type'];
-        if( !in_array($http_code, $ignore_code)){
+        if( $http_code === $last_http_code && !@$_SERVER['NO_AUTO'] && !in_array($http_code, $ignore_code)){
             echo "\rAdded to ignore code: $http_code      ";
             $ignore_code[] = $http_code;
             $newline = true;
         }
     }else if ($content_type){
-        if( $content_type != $info['content_type'] ){
+        if( $content_type != $info['content_type'] && $http_code != 404){
             echo $info['content_type'] . ' ';
             $newline = true;
         }
     }
     echo $http_code;
+    $last_http_code = $http_code;
     $no++;
-    if ( !$newline || in_array( $http_code, $ignore_code ) ) {
+    if ( !$newline && in_array( $http_code, $ignore_code ) ) {
         echo "\r" . str_repeat( ' ', $linew ) . "\r";
     } else {
         echo "\n";
@@ -89,6 +92,8 @@ function probe_words( $base )
         $arr[] = "{$base}_V$i";
         $arr[] = "{$base}v$i";
         $arr[] = "{$base}V$i";
+        $arr[] = "{$base}/v$i";
+        $arr[] = "{$base}/V$i";
     }
     $cnt = count( $arr );
     for ( $i = 0; $i < $cnt; $i++ ) {
@@ -113,6 +118,9 @@ $hostname =  @$_SERVER['CURL_HOST'] ?: parse_url( strtolower( $url ), PHP_URL_HO
 $hostname_no_extension = preg_replace( '/(\.[^.]{2,3})?(\.[^.]{2,10})$/', '', $hostname );
 $hostname_parts = explode( '.', $hostname_no_extension );
 $autowords = [];
+if ( @$_SERVER['ADD'] ) {
+    $autowords[] =  $_SERVER['ADD'];  
+}
 $autowords += $hostname_parts;
 $autowords[] = $hostname_no_extension;
 
@@ -175,12 +183,14 @@ $ch = curl_init();
 $no = 0;
 do_test( '', $no );
 $no = 1;
-$words = fopen( $file, 'r' );
-while (  ( $str = fgets( $words ) ) !== false ) {
-    do_test( $str, $no );
+if ( ! @$_SERVER['AUTO'] ) {
+    $words = fopen( $file, 'r' );
+    while (  ( $str = fgets( $words ) ) !== false ) {
+        do_test( $str, $no );
+    }
+    
+    fclose( $words );
 }
-
-fclose( $words );
 
 // Auto heuristic keyboard
 foreach ( $autowords as $basestr ) {
